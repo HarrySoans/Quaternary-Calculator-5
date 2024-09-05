@@ -33,13 +33,6 @@ public class CalculatorLogic {
         int decimalValueA = convertToDecimal(a);
         int decimalValueB = convertToDecimal(b);
         int decimalSum = decimalValueA + decimalValueB;
-        int quarternarySum = convertFromDecimal(decimalSum);
-        return quarternarySum;
-    }
-    public int subQuarternary(int a, int b){
-        int decimalValueA = convertToDecimal(a);
-        int decimalValueB = convertToDecimal(b);
-        int decimalSum = decimalValueA - decimalValueB;
         int quaternarySum = convertFromDecimal(decimalSum);
         return quaternarySum;
     }
@@ -48,24 +41,24 @@ public class CalculatorLogic {
         int decimalValueA = convertToDecimal(a);
         int decimalValueB = convertToDecimal(b);
         int decimalDiff = decimalValueA - decimalValueB;
-        int quarternaryDiff = convertFromDecimal(decimalDiff);
-        return quarternaryDiff;
+        int quaternaryDiff = convertFromDecimal(decimalDiff);
+        return quaternaryDiff;
     }
 
-    public int multQuaternary(int a, int b){
+    public int multiQuaternary(int a, int b){
         int decimalValueA = convertToDecimal(a);
         int decimalValueB = convertToDecimal(b);
         int decimalProduct = decimalValueA * decimalValueB;
-        int quarternaryProduct = convertFromDecimal(decimalProduct);
-        return quarternaryProduct;
+        int quaternaryProduct = convertFromDecimal(decimalProduct);
+        return quaternaryProduct;
     }
 
     public int divQuaternary(int a, int b){
         int decimalValueA = convertToDecimal(a);
         int decimalValueB = convertToDecimal(b);
         int decimalQuotient = decimalValueA / decimalValueB;
-        int quarternaryQuotient = convertFromDecimal(decimalQuotient);
-        return quarternaryQuotient;
+        int quaternaryQuotient = convertFromDecimal(decimalQuotient);
+        return quaternaryQuotient;
     }
 
     public int squareRoot(int operand) {
