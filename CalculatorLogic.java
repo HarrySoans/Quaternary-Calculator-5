@@ -29,7 +29,7 @@ public class CalculatorLogic {
         return multiplication + convertToDecimalHelper(a.substring(1));
     }
 
-    public int addQuarternary(int a, int b){
+    public int addQuaternary(int a, int b){
         int decimalValueA = convertToDecimal(a);
         int decimalValueB = convertToDecimal(b);
         int decimalSum = decimalValueA + decimalValueB;
@@ -37,7 +37,15 @@ public class CalculatorLogic {
         return quarternarySum;
     }
 
-    public int multQuarternary(int a, int b){
+    public int subQuaternary(int a, int b){
+        int decimalValueA = convertToDecimal(a);
+        int decimalValueB = convertToDecimal(b);
+        int decimalDiff = decimalValueA - decimalValueB;
+        int quarternaryDiff = convertFromDecimal(decimalDiff);
+        return quarternaryDiff;
+    }
+
+    public int multQuaternary(int a, int b){
         int decimalValueA = convertToDecimal(a);
         int decimalValueB = convertToDecimal(b);
         int decimalProduct = decimalValueA * decimalValueB;
@@ -45,7 +53,7 @@ public class CalculatorLogic {
         return quarternaryProduct;
     }
 
-    public int divQuarternary(int a, int b){
+    public int divQuaternary(int a, int b){
         int decimalValueA = convertToDecimal(a);
         int decimalValueB = convertToDecimal(b);
         int decimalQuotient = decimalValueA / decimalValueB;
