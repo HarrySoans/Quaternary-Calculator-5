@@ -17,11 +17,11 @@ public class CalculatorDisplay extends JPanel {
         this.logic = logic;
         setupDisplay();
         createButtons();
-        this.setSize(1280,720);
     }
 
     private void setupDisplay() {
         setLayout(new BorderLayout());
+        setPreferredSize(new Dimension(400, 800));
         displayField = new JTextField(20);
         displayField.setEditable(false); 
         displayField.setHorizontalAlignment(JTextField.RIGHT); 
@@ -30,7 +30,7 @@ public class CalculatorDisplay extends JPanel {
 
     private void createButtons() {
         JPanel buttonPanel = new JPanel();
-        buttonPanel.setLayout(new GridLayout(5, 4)); 
+        buttonPanel.setLayout(new GridLayout(5, 4));
 
 
         String[] buttonLabels = {

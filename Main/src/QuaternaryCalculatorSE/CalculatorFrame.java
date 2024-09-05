@@ -10,10 +10,12 @@ public class CalculatorFrame extends JFrame {
         logic = new CalculatorLogic();
         display = new CalculatorDisplay(logic);
         setupFrame();
+        System.out.println(getFrames());
     }
 
     private void setupFrame() {
         this.add(display);
+        this.setSize(1280,720);
     }
 }
 
