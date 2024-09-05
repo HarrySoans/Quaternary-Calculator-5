@@ -36,6 +36,13 @@ public class CalculatorLogic {
         int quarternarySum = convertFromDecimal(decimalSum);
         return quarternarySum;
     }
+    public int subQuarternary(int a, int b){
+        int decimalValueA = convertToDecimal(a);
+        int decimalValueB = convertToDecimal(b);
+        int decimalSum = decimalValueA - decimalValueB;
+        int quaternarySum = convertFromDecimal(decimalSum);
+        return quaternarySum;
+    }
 
     public int subQuaternary(int a, int b){
         int decimalValueA = convertToDecimal(a);
@@ -61,4 +68,18 @@ public class CalculatorLogic {
         return quarternaryQuotient;
     }
 
+    public int squareRoot(int operand) {
+        int decimalValueA = convertToDecimal(operand);
+        int decimalRoot = (int) Math.sqrt(decimalValueA);
+        int QuaternaryRoot = convertFromDecimal(decimalRoot);
+        return QuaternaryRoot;
+
+    }
+
+    public int square(int operand) {
+        int decimalValueA = convertToDecimal(operand);
+        int decimalValueB = decimalValueA * decimalValueA;
+        return convertFromDecimal(decimalValueB);
+
+    }
 }
