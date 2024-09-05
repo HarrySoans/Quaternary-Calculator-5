@@ -1,3 +1,5 @@
+package QuaternaryCalculatorSE;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -15,11 +17,11 @@ public class CalculatorDisplay extends JPanel {
         this.logic = logic;
         setupDisplay();
         createButtons();
+        this.setSize(1280,720);
     }
 
     private void setupDisplay() {
         setLayout(new BorderLayout());
-
         displayField = new JTextField(20);
         displayField.setEditable(false); 
         displayField.setHorizontalAlignment(JTextField.RIGHT); 
@@ -105,7 +107,7 @@ public class CalculatorDisplay extends JPanel {
                     result = logic.subQuaternary(firstOperand, secondOperand);
                     break;
                 case "*":
-                    result = logic.multQuaternary(firstOperand, secondOperand);
+                    result = logic.multiQuaternary(firstOperand, secondOperand);
                     break;
                 case "/":
                     result = logic.divQuaternary(firstOperand, secondOperand);

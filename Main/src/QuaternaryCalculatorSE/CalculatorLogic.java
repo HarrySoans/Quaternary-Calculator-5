@@ -1,3 +1,5 @@
+package QuaternaryCalculatorSE;
+
 public class CalculatorLogic {
     public int convertFromDecimal(int a) {
         int mutableA = a;

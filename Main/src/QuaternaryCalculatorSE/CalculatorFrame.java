@@ -1,3 +1,5 @@
+package QuaternaryCalculatorSE;
+
 import javax.swing.JFrame;
 
 public class CalculatorFrame extends JFrame {
