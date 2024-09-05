@@ -102,7 +102,7 @@ public class CalculatorDisplay extends JPanel {
                     result = logic.addQuaternary(firstOperand, secondOperand);
                     break;
                 case "-":
-                    result = logic.subtract(firstOperand, secondOperand);
+                    result = logic.subQuaternary(firstOperand, secondOperand);
                     break;
                 case "*":
                     result = logic.multQuaternary(firstOperand, secondOperand);
