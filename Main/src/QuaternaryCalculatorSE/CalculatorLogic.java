@@ -6,10 +6,14 @@ public class CalculatorLogic {
         int quotient = 1;
         StringBuilder strA = new StringBuilder();
         //https://www.convzone.com/decimal-to-quaternary/
-        while (quotient > 0){
+
+        if (a == 0) {
+            return 0;
+        }
+
+        while (mutableA > 0) {
             strA.insert(0,mutableA%4);
-            mutableA = quotient;
-            quotient = Math.floorDiv(mutableA, 4);
+            mutableA = Math.floorDiv(mutableA, 4);
 
         }
         return Integer.parseInt(String.valueOf(strA));
