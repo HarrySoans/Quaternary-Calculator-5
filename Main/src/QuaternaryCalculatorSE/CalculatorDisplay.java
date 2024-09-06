@@ -66,10 +66,20 @@ public class CalculatorDisplay extends JPanel {
             } 
             // If "=" is pressed, perform the operation and display the result
             else if (command.equals("=")) {
-                int secondOperand = logic.convertToDecimal(Integer.parseInt(currentInput));
-                int result = performOperation(firstOperand, secondOperand, operator);
-                currentInput = logic.convertFromDecimal(result) + ""; 
-                displayField.setText(currentInput); 
+                // Validate that currentInput is not empty before performing the operation
+                if (!currentInput.isEmpty()) {
+                    try {
+                        int secondOperand = logic.convertToDecimal(Integer.parseInt(currentInput));
+                        int result = performOperation(firstOperand, secondOperand, operator);
+                        currentInput = String.valueOf(result); 
+                        displayField.setText(currentInput); 
+                    } catch (NumberFormatException ex) {
+                        displayField.setText("Error: Invalid Input");
+                        currentInput = "";
+                    }
+                } else {
+                    displayField.setText("Error: No Input");
+                }
             } 
             // Square root operation
             else if (command.equals("√")) {
@@ -113,6 +123,7 @@ public class CalculatorDisplay extends JPanel {
                     result = logic.divQuaternary(firstOperand, secondOperand);
                     break;
             }
+            currentInput = String.valueOf(result);
             return result;
         }
     }

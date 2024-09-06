@@ -55,20 +55,21 @@ public class CalculatorLogic {
         return quaternaryProduct;
     }
 
-    public int divQuaternary(int a, int b){
-        int decimalValueA = convertToDecimal(a);
-        int decimalValueB = convertToDecimal(b);
-        int decimalQuotient = decimalValueA / decimalValueB;
-        int quaternaryQuotient = convertFromDecimal(decimalQuotient);
-        return quaternaryQuotient;
+    public int divQuaternary(int a, int b) {
+        if (b == 0) {
+            throw new ArithmeticException("Division by zero is not allowed.");
+        }
+        int decimalQuotient = convertToDecimal(a) / convertToDecimal(b);
+        return convertFromDecimal(decimalQuotient);
     }
 
     public int squareRoot(int operand) {
-        int decimalValueA = convertToDecimal(operand);
-        int decimalRoot = (int) Math.sqrt(decimalValueA);
-        int QuaternaryRoot = convertFromDecimal(decimalRoot);
-        return QuaternaryRoot;
-
+        int decimalValue = convertToDecimal(operand);
+        int decimalRoot = (int) Math.sqrt(decimalValue);
+        if (decimalRoot * decimalRoot != decimalValue) {
+            throw new ArithmeticException("Square root is not a whole number in quaternary.");
+        }
+        return convertFromDecimal(decimalRoot);
     }
 
     public int square(int operand) {
