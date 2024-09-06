@@ -1,4 +1,4 @@
-package QuaternaryCalculatorSE;
+package Main.src.QuaternaryCalculatorSE;
 
 public class QuaternaryCalculator {
     public static void main(String[] args) {

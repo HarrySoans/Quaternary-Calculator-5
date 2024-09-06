@@ -1,4 +1,4 @@
-package QuaternaryCalculatorSE;
+package Main.src.QuaternaryCalculatorSE;
 
 public class CalculatorLogic {
     public int convertFromDecimal(int a) {

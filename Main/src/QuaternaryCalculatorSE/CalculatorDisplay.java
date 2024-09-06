@@ -1,4 +1,4 @@
-package QuaternaryCalculatorSE;
+package Main.src.QuaternaryCalculatorSE;
 
 import javax.swing.*;
 import java.awt.*;
