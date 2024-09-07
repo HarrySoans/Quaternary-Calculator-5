@@ -16,18 +16,18 @@ public class CalculatorFrameTest {
     public void testCalculatorFrameSetup() {
         CalculatorFrame frame = new CalculatorFrame();
 
-        // Check if the frame size is set correctly
+        //check if the frame size is set correctly
         assertEquals(1280, frame.getWidth());
         assertEquals(720, frame.getHeight());
 
-        // Check if the display component is added to the frame
+        // check if the display component is added to the frame
         assertTrue(frame.getContentPane().getComponent(0) instanceof CalculatorDisplay);
 
         @Test
         public void testSetupFrame() {
             CalculatorFrame frame = new CalculatorFrame();
 
-            // Check if the frame size is set correctly
+            // check if the frame size is set correctly
             assertEquals(1280, frame.getWidth());
             assertEquals(720, frame.getHeight());
 
