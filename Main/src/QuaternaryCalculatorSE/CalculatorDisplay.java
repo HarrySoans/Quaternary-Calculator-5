@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class CalculatorDisplay extends JPanel {
-    private JTextField displayField; 
+    public JTextField displayField;
     private String currentInput = ""; 
     private String operator = ""; 
     private int firstOperand = 0; 
@@ -19,7 +19,7 @@ public class CalculatorDisplay extends JPanel {
         createButtons();
     }
 
-    private void setupDisplay() {
+    public void setupDisplay() {
         setLayout(new BorderLayout());
         setPreferredSize(new Dimension(400, 800));
         displayField = new JTextField(20);

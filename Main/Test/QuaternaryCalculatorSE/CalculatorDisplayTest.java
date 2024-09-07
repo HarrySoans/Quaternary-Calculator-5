@@ -1,11 +1,14 @@
 package Main.Test.QuaternaryCalculatorSE;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 import Main.src.QuaternaryCalculatorSE.CalculatorLogic;
 import Main.src.QuaternaryCalculatorSE.CalculatorDisplay;
+
+import java.awt.*;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class CalculatorDisplayTest {
@@ -36,4 +39,3 @@ public class CalculatorDisplayTest {
 }
 
 
-}
